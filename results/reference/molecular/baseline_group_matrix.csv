@@ -1,0 +1,21 @@
+method,route_group,paper_role,method_family,result_source,observed_in_metrics
+risk_knn_tanimoto,Classic methods,classic-1,nearest-neighbor chemical novelty,rerun_same_protocol,True
+risk_applicability_domain,Classic methods,classic-2,applicability-domain heuristics,rerun_same_protocol,True
+risk_mahalanobis,Recent same-task OOD/UQ,recent-1,feature-space frontier distance,rerun_same_protocol,True
+risk_uncertainty_only,Recent same-task OOD/UQ,recent-2,predictive uncertainty,rerun_same_protocol,True
+risk_ensemble_variance,Recent same-task OOD/UQ,recent-3,deep-ensemble-style variance proxy,rerun_same_protocol,True
+risk_isotonic_uq,Recent same-task OOD/UQ,recent-4,validation-calibrated uncertainty,rerun_same_protocol,True
+risk_conformal_uq,Recent same-task OOD/UQ,recent-5,conformal/rank uncertainty score,rerun_same_protocol,True
+risk_calibrated_tanimoto,Direct mechanism competitors,direct-1,calibrated chemical-neighborhood risk,rerun_same_protocol,True
+risk_calibrated_ad,Direct mechanism competitors,direct-2,calibrated applicability-domain risk,rerun_same_protocol,True
+risk_validation_knn_error,Direct mechanism competitors,direct-3,validation-neighborhood error transfer,rerun_same_protocol,True
+risk_rf_error_predictor,Direct mechanism competitors,direct-4,supervised error prediction,rerun_same_protocol,True
+risk_scalar_full,Strong scalar control,control-1,unconstrained all-axis scalar risk,rerun_same_protocol,True
+risk_mara,Proposed,main,multi-axis nonnegative reliability attribution,ours_rerun_same_protocol,True
+risk_mara_isotonic,Proposed,calibrated-variant,MARA with validation isotonic calibration,ours_rerun_same_protocol,True
+risk_mara_ad_guard,Proposed,ood-guard-variant,MARA risk enveloped by train-only applicability-domain prior with nonnegative Platt calibration,ours_rerun_same_protocol,True
+risk_mara_dual_guard_rate,Proposed,dual-head-guard-variant,MARA attribution head plus scalar full-axis ranking guard with validation-rate matched monotone scaling,ours_rerun_same_protocol,True
+risk_mara_dual_blend_rate,Proposed,dual-head-blend-variant,MARA attribution head blended with scalar full-axis ranking head and validation-rate matched monotone scaling,ours_rerun_same_protocol,True
+risk_mara_rank_fusion,Proposed,rank-fusion-main,"fixed rank average of MARA, scalar full-axis risk, validation-neighborhood error, calibrated Tanimoto, and RF error predictor with validation-rate matched scaling",ours_rerun_same_protocol,True
+risk_mara_ad_guard_rate,Proposed,ood-guard-rate-matched-variant,MARA applicability-domain guard with validation-rate matched monotone scaling,ours_rerun_same_protocol,True
+risk_mara_ad_guard_isotonic,Proposed,ood-guard-calibrated-variant,MARA applicability-domain guard with isotonic calibration,ours_rerun_same_protocol,True

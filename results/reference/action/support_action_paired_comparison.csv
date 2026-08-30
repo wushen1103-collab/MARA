@@ -1,0 +1,9 @@
+metric,competitor,paired_units,mara_minus_competitor_mean,mara_minus_competitor_std,wilcoxon_p_uncorrected,interpretation,wilcoxon_p_holm
+delta_mae,mismatched_axis,30,0.004219391648737469,0.019186781996092115,0.22064675763249397,positive favors MARA because all delta metrics are improvements,0.44129351526498795
+delta_failure_rate,mismatched_axis,30,-0.0005208333333333333,0.02736747226315782,0.9767154699449113,positive favors MARA because all delta metrics are improvements,1.0
+delta_mae,nearest_neighbor,30,-0.00022642670712688044,0.01468581997111475,0.7921590935438871,positive favors MARA because all delta metrics are improvements,0.7921590935438871
+delta_failure_rate,nearest_neighbor,30,0.0015625,0.022230031479261687,0.6869282008702833,positive favors MARA because all delta metrics are improvements,1.0
+delta_mae,random_axis,30,0.005397197265570184,0.016605468966502192,0.07324407435953617,positive favors MARA because all delta metrics are improvements,0.2197322230786085
+delta_failure_rate,random_axis,30,0.0032812500000000003,0.016057327172562814,0.3283407578103591,positive favors MARA because all delta metrics are improvements,0.9850222734310773
+delta_mae,uncertainty_pool,30,0.008785671543715994,0.018708298742887475,0.03098480962216854,positive favors MARA because all delta metrics are improvements,0.12393923848867416
+delta_failure_rate,uncertainty_pool,30,0.013020833333333334,0.02989613996198233,0.03288751536968876,positive favors MARA because all delta metrics are improvements,0.13155006147875503

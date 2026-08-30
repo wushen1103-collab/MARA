@@ -1,0 +1,11 @@
+criterion,observed,pass,evidence
+8-12 external methods,12,True,"risk_knn_tanimoto, risk_applicability_domain, risk_mahalanobis, risk_uncertainty_only, risk_ensemble_variance, risk_isotonic_uq, risk_conformal_uq, risk_calibrated_tanimoto, risk_calibrated_ad, risk_validation_knn_error, risk_rf_error_predictor, risk_scalar_full"
+classic methods = 2,2,True,"risk_knn_tanimoto, risk_applicability_domain"
+recent same-task SOTA = 4-6,5,True,"risk_mahalanobis, risk_uncertainty_only, risk_ensemble_variance, risk_isotonic_uq, risk_conformal_uq"
+direct mechanism competitors = 2-4,4,True,"risk_calibrated_tanimoto, risk_calibrated_ad, risk_validation_knn_error, risk_rf_error_predictor"
+baseline grouped by technical route,4,True,"Classic methods, Direct mechanism competitors, Recent same-task OOD/UQ, Strong scalar control"
+at least 2-4 public datasets,3,True,"BindingDB10k, ChEMBL10k, MoleculeACE30"
+same protocol/same split rerun,20,True,all risk methods are scored from the same metrics.csv case keys
+special scenarios,4,True,"assay, random, scaffold, target, temporal"
+mean +/- std with at least 5 split seeds,10,True,minimum unique split_seed over dataset_id/split cases
+result-source column,20,True,baseline_group_matrix.csv

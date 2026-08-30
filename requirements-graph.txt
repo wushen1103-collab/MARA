@@ -1,0 +1,3 @@
+torch==2.13.0
+torch-geometric==2.7.0
+transformers==5.14.1

@@ -1,0 +1,11 @@
+dataset,condition,protocol,true_axes,seeds,precision_at_k_mean,recall_at_k_mean,exact_match_mean,true_axis_contribution_mass_mean,true_axis_contribution_mass_std
+ACSIncome,clean,state_shift,A2_source_domain,5,1.0,1.0,1.0,0.4013379227426889,0.00012063295327269028
+ACSIncome,clean,state_time_compound,A2_source_domain+A4_frontier,5,1.0,1.0,1.0,0.6299740692812732,0.00021025345356039826
+ACSIncome,clean,temporal_shift,A4_frontier,5,1.0,1.0,1.0,0.39054865150253076,0.0001786407478876997
+ACSIncome,noise,state_shift,A2_source_domain,5,0.2,0.2,0.2,0.36047052886395614,0.0031369837861003782
+ACSIncome,noise,state_time_compound,A2_source_domain+A4_frontier,5,0.5,0.5,0.0,0.576286797532829,0.001034654066549379
+ACSIncome,noise,temporal_shift,A4_frontier,5,0.0,0.0,0.0,0.3472560708886414,0.0013766787802335632
+OGBN-Arxiv,clean,official_temporal,A4_frontier,5,0.0,0.0,0.0,0.11123461740816272,0.0002524658534899016
+OGBN-Arxiv,clean,structural_group_ood,A2_source_domain,5,1.0,1.0,1.0,0.34706772648005857,0.02919859001753991
+OGBN-Arxiv,noise,official_temporal,A4_frontier,5,0.0,0.0,0.0,0.10300730408584077,0.0001895771402505474
+OGBN-Arxiv,noise,structural_group_ood,A2_source_domain,5,1.0,1.0,1.0,0.3294755429883919,0.02754365889936778
