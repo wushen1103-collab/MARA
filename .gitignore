@@ -1,17 +1,17 @@
-.venv/
-.venv-*/
+/.venv/
+/.venv-*/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 
-data/
-external/
-logs/
-artifacts/
-models/
-checkpoints/
+/data/
+/external/
+/logs/
+/artifacts/
+/models/
+/checkpoints/
 *.log
 *.tmp
 *.part
